@@ -1,0 +1,3261 @@
+.LoginScreen {
+  background: url("./loginBg.svg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginScreen .wrapper {
+  background-color: #342c3c;
+  padding: 45px 30px;
+}
+
+.LoginScreen .title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.LoginScreen .sub-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.LoginScreen .btn-wrapper .btn {
+  border: 2px solid #5cdb95;
+  border-radius: 5px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.LoginScreen .btn-wrapper .btn .text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.guest-profile-wrapper {
+  background-color: #342c3c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 70px;
+}
+
+.guest-profile-wrapper .img {
+  width: 140px;
+  height: 120px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.guest-profile-wrapper .name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.guest-profile-wrapper .email {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.guest-profile-wrapper .continue-btn {
+  border: 2px solid #5cdb95;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .NavBar {
+    width: 100%;
+    background: #5cdb95;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #LogoSec {
+    margin-left: 10vw;
+  }
+  #LogoSec p {
+    font-size: 25px;
+  }
+  .List {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 42vw;
+  }
+  .List li {
+    display: block;
+    margin-left: 2vw;
+  }
+  .List li a {
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  #Toggle {
+    display: none;
+  }
+  .SearchLayout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .SearchInput input {
+    margin: 1rem 0rem 0rem 5rem;
+    width: 52rem;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .SearchInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  .SearchBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1.3rem 0rem 1rem 2rem;
+  }
+  .Table {
+    margin: 5rem;
+    height: auto;
+    width: 65rem;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  .Table .Head {
+    width: 100%;
+    height: 8rem;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Bottom {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Body div {
+    margin-left: 2rem;
+  }
+  .Table .Body #StEn {
+    font-size: 35px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Table .Body #Address {
+    font-size: 22px;
+  }
+  .Table .Body #ConNum {
+    font-size: 22px;
+  }
+  .Table .Body #DOJ {
+    font-size: 22px;
+  }
+  .Table .Body #TraDetail {
+    font-size: 22px;
+  }
+  .Table .Body #AddComm {
+    font-size: 22px;
+  }
+  #Header {
+    display: flex;
+    flex-direction: row;
+  }
+  #Header div {
+    display: block;
+  }
+  #Header_SUB {
+    margin-left: 1rem;
+  }
+  #Header_INFO {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  #Header_INFO h5 {
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  #Header_IMG {
+    margin-top: 0.6rem;
+    margin-left: 2rem;
+  }
+  #Header_IMG img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  #Timer_Info {
+    margin-left: 30rem;
+    margin-top: 0.5rem;
+    font-size: 20px;
+  }
+  .CommentBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  .CommentLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .CommentImg {
+    margin: 15px 45px 5px 25px;
+  }
+  .CommentImg img {
+    width: 50px;
+    border-radius: 25px;
+  }
+  .CommentTxt h6 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .CommentTxt p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  #CommentInput input {
+    margin: 1rem;
+    width: 91.3%;
+    height: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #CommentInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  /* Chat containers */
+  .MessageContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ImageContent {
+    width: 95px;
+    margin: 4rem 1rem 0rem 1.5rem;
+  }
+  .ImageContent-other {
+    width: auto;
+    min-width: 5%;
+    margin: 4rem 1rem 0rem 0rem;
+  }
+  .speech-bubble-user {
+    position: relative;
+    background: #00aabb;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 95vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-user:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-right: -35px;
+  }
+  .speech-bubble-other {
+    position: relative;
+    background: #576dce;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 90vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-other:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right-color: #576dce;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-left: -35px;
+  }
+
+  /* Clear floats */
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #fff;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(58, 39, 39);
+  }
+  /* input */
+  #MessageSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #MessageSection input {
+    margin: 1rem 0 0.5rem 1.5rem;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #MessageSection p {
+    width: 4.5rem;
+    height: 2.9rem;
+    border-radius: 0px 10px 8px 0px;
+    margin: 1rem -4.6rem;
+    color: black;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #MessageSection input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  #MessageSection input:focus + #Send {
+    background-color: dodgerblue;
+    border-radius: 0px 10px 8px 0px;
+    outline: none;
+    /* box-shadow: 0 0 8px 0 dodgerblue */
+  }
+  #Task {
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Text h6 {
+    font-size: 25px;
+  }
+  #Task #Pic {
+    width: 4rem;
+    height: 4rem;
+    background: url("./Components/Chat/Pic_1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  #Task #Topic h3 {
+    margin-top: 0.5rem;
+  }
+  #Task #Topic #Info {
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Topic #Info div {
+    margin: 0 5rem;
+  }
+  #Task #CreateEvent {
+    height: 2.2rem;
+    width: 8rem;
+    background: #5cdb95;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 2rem 0;
+    cursor: pointer;
+  }
+  #Task #CreateEvent h6 {
+    font-size: 25px;
+    margin-top: 22px;
+    margin-left: 2rem;
+  }
+  .border {
+    width: 70vw;
+    height: 2px;
+    background-color: aqua;
+  }
+  #PopUp {
+    width: 35%;
+    height: 15rem;
+    background: #f2f2f2;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  #card {
+    margin-top: 10%;
+  }
+  #card input {
+    margin: 1rem 0rem;
+    width: 70%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #card #btn {
+    width: 5rem;
+    height: 2rem;
+    padding-top: 3.5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  .Submit {
+    background: #58b666;
+    margin: 12px 2% 12px 5%;
+  }
+  .Cancel {
+    margin: 12px 1% 12px 35%;
+    background: #a80000;
+  }
+  #Collapse_btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Collapse_btn .fas {
+    font-size: 1.5rem;
+    margin: 22px 15px;
+    cursor: pointer;
+  }
+  #SubCollapse {
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  .Info_Heading {
+    margin-left: 10px;
+  }
+  .Info_Heading p {
+    font-size: 22px;
+  }
+  .End {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  #Text_Area_Hidden {
+    display: none;
+    height: 0px;
+    transition: 1s ease-in-out;
+  }
+  #Text_Area_Show {
+    display: block;
+    height: auto;
+    transition: ease-in 0.4s;
+  }
+  #Text_Area_Show p {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  /* CreateProject */
+  .CreateProject {
+    margin: 2rem 10% 1rem 15%;
+  }
+  .CreateProject h2 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .CreateProject .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .CreateProject .form label {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .CreateProject .form input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  .FormBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .NavBar {
+    width: 100%;
+    background: #5cdb95;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #LogoSec {
+    margin-left: 10vw;
+    margin-top: 0rem;
+  }
+  #LogoSec p {
+    font-size: 25px;
+  }
+  .List {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.8rem;
+    margin-left: 30vw;
+  }
+  .List li {
+    display: block;
+    margin-left: 2vw;
+  }
+  .List li a {
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  #Toggle {
+    display: none;
+  }
+  .SearchLayout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .SearchInput input {
+    margin: 1rem 0rem 0rem 5rem;
+    width: 43rem;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .SearchInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  .SearchBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1.3rem 0rem 1rem 2rem;
+  }
+  .Table {
+    margin: 5rem;
+    height: auto;
+    width: 55rem;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  .Table .Head {
+    width: 100%;
+    height: 6rem;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Bottom {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Body div {
+    margin-left: 2rem;
+  }
+  .Table .Body #StEn {
+    font-size: 33px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Table .Body #Address {
+    font-size: 20px;
+  }
+  .Table .Body #ConNum {
+    font-size: 20px;
+  }
+  .Table .Body #DOJ {
+    font-size: 20px;
+  }
+  .Table .Body #TraDetail {
+    font-size: 20px;
+  }
+  .Table .Body #AddComm {
+    font-size: 20px;
+  }
+
+  #Header {
+    display: flex;
+    flex-direction: row;
+  }
+  #Header div {
+    display: block;
+  }
+  #Header_SUB {
+    margin-left: 1rem;
+  }
+  #Header_INFO {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  #Header_INFO h5 {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  #Header_IMG {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+  #Header_IMG img {
+    width: 80px;
+    border-radius: 1rem;
+  }
+  #Timer_Info {
+    margin-left: 25rem;
+    margin-top: 0.5rem;
+    font-size: 20px;
+  }
+  .CommentBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  .CommentLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .CommentImg {
+    margin: 15px 45px 5px 25px;
+  }
+  .CommentImg img {
+    width: 50px;
+    border-radius: 25px;
+  }
+  .CommentTxt h6 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .CommentTxt p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  #CommentInput input {
+    margin: 0rem 1rem 1rem 1.5rem;
+    width: 90%;
+    height: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #CommentInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  /* Chat containers */
+  .MessageContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ImageContent {
+    width: 95px;
+    margin: 4rem 1rem 0rem 1.5rem;
+  }
+  .ImageContent-other {
+    width: 95px;
+    margin: 4rem 1rem 0rem 0rem;
+  }
+  .speech-bubble-user {
+    position: relative;
+    background: #00aabb;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 95vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-user:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-right: -35px;
+  }
+  .speech-bubble-other {
+    position: relative;
+    background: #576dce;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 90vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-other:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right-color: #576dce;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-left: -35px;
+  }
+
+  /* Clear floats */
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #fff;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(58, 39, 39);
+  }
+  /* input */
+  #MessageSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #MessageSection input {
+    margin: 1rem 0 0.5rem 1.5rem;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #MessageSection p {
+    width: 4.5rem;
+    height: 2.9rem;
+    border-radius: 0px 10px 8px 0px;
+    margin: 1rem -4.6rem;
+    color: black;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #MessageSection input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  #MessageSection input:focus + #Send {
+    background-color: dodgerblue;
+    border-radius: 0px 10px 8px 0px;
+    outline: none;
+    /* box-shadow: 0 0 8px 0 dodgerblue */
+  }
+  #Task {
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Text h6 {
+    font-size: 25px;
+  }
+  #Task #Pic {
+    width: 4rem;
+    height: 4rem;
+    background: url("./Components/Chat/Pic_1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  #Task #Topic h3 {
+    margin-top: 0.5rem;
+  }
+  #Task #Topic #Info {
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Topic #Info div {
+    margin: 0 5rem;
+  }
+  #Task #CreateEvent {
+    height: 2.2rem;
+    width: 8rem;
+    background: #5cdb95;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 2rem 0;
+    cursor: pointer;
+  }
+  #Task #CreateEvent h6 {
+    font-size: 25px;
+    margin-top: 22px;
+    margin-left: 2rem;
+  }
+  .border {
+    width: 70vw;
+    height: 2px;
+    background-color: aqua;
+  }
+  #PopUp {
+    width: 35%;
+    height: 15rem;
+    background: #f2f2f2;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  #card {
+    margin-top: 10%;
+  }
+  #card input {
+    margin: 1rem 0rem;
+    width: 70%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #card #btn {
+    width: 5rem;
+    height: 2rem;
+    padding-top: 3.5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  .Submit {
+    background: #58b666;
+    margin: 12px 2% 12px 5%;
+  }
+  .Cancel {
+    margin: 12px 1% 12px 35%;
+    background: #a80000;
+  }
+  #Collapse_btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    outline-width: 2px;
+    outline-color: #00aabb;
+    padding: 18px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  #Collapse_btn .fas {
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  #SubCollapse {
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  .Info_Heading {
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+  .End {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  #Text_Area_Hidden {
+    display: none;
+    height: 0px;
+    transition: 1s ease-in-out;
+  }
+  #Text_Area_Show {
+    display: block;
+    height: auto;
+    transition: ease-in 0.4s;
+  }
+  /* CreateProject */
+  .CreateProject {
+    margin: 2rem 10% 1rem 15%;
+  }
+  .CreateProject h2 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .CreateProject .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .CreateProject .form label {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .CreateProject .form input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  .FormBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .NavBar {
+    width: 100%;
+    background: #5cdb95;
+    height: 5rem;
+    transition: height 1s;
+  }
+  .NavBar #LogoSec {
+    text-align: center;
+    padding-top: 0.3rem;
+  }
+  .NavBar #LogoSec p {
+    font-size: 22px;
+  }
+  .NavBar .List {
+    display: none;
+  }
+  .NavBar #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+
+  .NavBar-T {
+    width: 100%;
+    background: #5cdb95;
+    height: 100vh;
+    position: fixed;
+    transition: height 1s;
+  }
+  .NavBar-T #LogoSec {
+    text-align: center;
+    padding-top: 0.3rem;
+  }
+  .NavBar-T #LogoSec p {
+    font-size: 22px;
+  }
+  .NavBar-T .List li {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 5rem;
+    transition-delay: 0.8s;
+  }
+  .NavBar-T .List li p {
+    font-size: 20px;
+  }
+  .NavBar-T #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+  .SearchLayout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+  .SearchInput {
+    margin: 0 auto;
+  }
+  .SearchInput input {
+    width: 30rem;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .SearchInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  .SearchBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1.3rem 0rem 1rem 3rem;
+  }
+  .Table {
+    margin: 2rem auto;
+    height: auto;
+    width: 45rem;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  .Table .Head {
+    width: 100%;
+    height: 6rem;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Bottom {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Body div {
+    margin-left: 2rem;
+  }
+  .Table .Body #StEn {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Table .Body #Address {
+    font-size: 18px;
+  }
+  .Table .Body #ConNum {
+    font-size: 18px;
+  }
+  .Table .Body #DOJ {
+    font-size: 18px;
+  }
+  .Table .Body #TraDetail {
+    font-size: 18px;
+  }
+  .Table .Body #AddComm {
+    font-size: 18px;
+  }
+  #Header {
+    display: flex;
+    flex-direction: row;
+  }
+  #Header div {
+    display: block;
+  }
+  #Header_SUB {
+    margin-left: 1rem;
+  }
+  #Header_INFO {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  #Header_INFO h5 {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  #Header_IMG {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+  #Header_IMG img {
+    width: 75px;
+    border-radius: 1rem;
+  }
+  #Timer_Info {
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+    font-size: 20px;
+  }
+  .CommentBtn {
+    width: 7.8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  .CommentLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .CommentImg {
+    margin: 9px 30px 5px 25px;
+  }
+  .CommentImg img {
+    width: 55px;
+    border-radius: 25px;
+  }
+  .CommentTxt h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .CommentTxt p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #CommentInput input {
+    margin: 0rem 1rem 1rem 1.5rem;
+    width: 85%;
+    height: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #CommentInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+
+  /* Chat containers */
+  .MessageContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ImageContent {
+    width: 95px;
+    margin: 4rem 1rem 0rem 1.5rem;
+  }
+  .ImageContent-other {
+    width: 95px;
+    margin: 4rem 1rem 0rem 0rem;
+  }
+  .speech-bubble-user {
+    position: relative;
+    background: #00aabb;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 95vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-user:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-right: -35px;
+  }
+  .speech-bubble-other {
+    position: relative;
+    background: #576dce;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 90vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-other:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right-color: #576dce;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-left: -35px;
+  }
+
+  /* Clear floats */
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #fff;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(58, 39, 39);
+  }
+  /* input */
+  #MessageSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #MessageSection input {
+    margin: 1rem 0 0.5rem 1.5rem;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #MessageSection p {
+    width: 4.5rem;
+    height: 2.9rem;
+    border-radius: 0px 10px 8px 0px;
+    margin: 1rem -4.6rem;
+    color: black;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #MessageSection input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  #MessageSection input:focus + #Send {
+    background-color: dodgerblue;
+    border-radius: 0px 10px 8px 0px;
+    outline: none;
+    /* box-shadow: 0 0 8px 0 dodgerblue */
+  }
+  #Task {
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Text h6 {
+    font-size: 25px;
+  }
+  #Task #Pic {
+    width: 4rem;
+    height: 4rem;
+    background: url("./Components/Chat/Pic_1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  #Task #Topic h3 {
+    margin-top: 0.5rem;
+  }
+  #Task #Topic #Info {
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Topic #Info div {
+    margin: 0 5rem;
+  }
+  #Task #CreateEvent {
+    height: 2.2rem;
+    width: 8rem;
+    background: #5cdb95;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 2rem 0;
+    cursor: pointer;
+  }
+  #Task #CreateEvent h6 {
+    font-size: 25px;
+    margin-top: 22px;
+    margin-left: 2rem;
+  }
+  .border {
+    width: 70vw;
+    height: 2px;
+    background-color: aqua;
+  }
+  #PopUp {
+    width: 35%;
+    height: 15rem;
+    background: #f2f2f2;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  #card {
+    margin-top: 10%;
+  }
+  #card input {
+    margin: 1rem 0rem;
+    width: 70%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #card #btn {
+    width: 5rem;
+    height: 2rem;
+    padding-top: 3.5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  .Submit {
+    background: #58b666;
+    margin: 12px 2% 12px 5%;
+  }
+  .Cancel {
+    margin: 12px 1% 12px 35%;
+    background: #a80000;
+  }
+  #Collapse_btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    outline-width: 2px;
+    outline-color: #00aabb;
+    padding: 18px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  #Collapse_btn .fas {
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  #SubCollapse {
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  .Info_Heading {
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+  .End {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  #Text_Area_Hidden {
+    display: none;
+    height: 0px;
+    transition: 1s ease-in-out;
+  }
+  #Text_Area_Show {
+    display: block;
+    height: auto;
+    transition: ease-in 0.4s;
+  }
+  /* CreateProject */
+  .CreateProject {
+    margin: 2rem 10% 1rem 15%;
+  }
+  .CreateProject h2 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .CreateProject .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .CreateProject .form label {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .CreateProject .form input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  .FormBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .NavBar {
+    width: 100%;
+    background: #5cdb95;
+    height: 5rem;
+    transition: height 1s;
+  }
+  .NavBar #LogoSec {
+    text-align: center;
+    padding-top: 0.3rem;
+  }
+  .NavBar #LogoSec p {
+    font-size: 22px;
+  }
+  .NavBar .List {
+    display: none;
+  }
+  .NavBar #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+
+  .NavBar-T {
+    width: 100%;
+    background: #5cdb95;
+    height: 100vh;
+    position: fixed;
+    transition: height 1s;
+  }
+  .NavBar-T #LogoSec {
+    text-align: center;
+    padding-top: 0.3rem;
+  }
+  .NavBar-T #LogoSec p {
+    font-size: 22px;
+  }
+  .NavBar-T .List li {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 5rem;
+    transition-delay: 0.8s;
+  }
+  .NavBar-T .List li p {
+    font-size: 20px;
+  }
+  .NavBar-T #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+  .SearchLayout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+  .SearchInput {
+    margin: 0 auto;
+  }
+  .SearchInput input {
+    width: 30rem;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .SearchInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  .SearchBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1.3rem 0rem 1rem 3rem;
+  }
+  .Table {
+    margin: 2rem auto;
+    height: auto;
+    width: 45rem;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  .Table .Head {
+    width: 100%;
+    height: 6rem;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Bottom {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Body div {
+    margin-left: 2rem;
+  }
+  .Table .Body #StEn {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Table .Body #Address {
+    font-size: 18px;
+  }
+  .Table .Body #ConNum {
+    font-size: 18px;
+  }
+  .Table .Body #DOJ {
+    font-size: 18px;
+  }
+  .Table .Body #TraDetail {
+    font-size: 18px;
+  }
+  .Table .Body #AddComm {
+    font-size: 18px;
+  }
+  #Header {
+    display: flex;
+    flex-direction: row;
+  }
+  #Header div {
+    display: block;
+  }
+  #Header_SUB {
+    margin-left: 1rem;
+  }
+  #Header_INFO {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  #Header_INFO h5 {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  #Header_IMG {
+    margin-top: 0.6rem;
+    margin-left: 2rem;
+  }
+  #Header_IMG img {
+    width: 75px;
+    border-radius: 1rem;
+  }
+  #Timer_Info {
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+    font-size: 20px;
+  }
+  .CommentBtn {
+    width: 7.8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  .CommentLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .CommentImg {
+    margin: 9px 30px 5px 25px;
+  }
+  .CommentImg img {
+    width: 55px;
+    border-radius: 25px;
+  }
+  .CommentTxt h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .CommentTxt p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #CommentInput input {
+    margin: 0rem 1rem 1rem 1.5rem;
+    width: 85%;
+    height: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #CommentInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  /* Chat containers */
+  .MessageContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ImageContent {
+    width: 95px;
+    margin: 4rem 1rem 0rem 1.5rem;
+  }
+  .ImageContent-other {
+    width: 95px;
+    margin: 4rem 1rem 0rem 0rem;
+  }
+  .speech-bubble-user {
+    position: relative;
+    background: #00aabb;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 95vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-user:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-right: -35px;
+  }
+  .speech-bubble-other {
+    position: relative;
+    background: #576dce;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 90vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-other:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right-color: #576dce;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-left: -35px;
+  }
+
+  /* Clear floats */
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #fff;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(58, 39, 39);
+  }
+  /* input */
+  #MessageSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #MessageSection input {
+    margin: 1rem 0 0.5rem 1.5rem;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #MessageSection p {
+    width: 4.5rem;
+    height: 2.9rem;
+    border-radius: 0px 10px 8px 0px;
+    margin: 1rem -4.6rem;
+    color: black;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #MessageSection input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  #MessageSection input:focus + #Send {
+    background-color: dodgerblue;
+    border-radius: 0px 10px 8px 0px;
+    outline: none;
+    /* box-shadow: 0 0 8px 0 dodgerblue */
+  }
+  #Task {
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Text h6 {
+    font-size: 25px;
+  }
+  #Task #Pic {
+    width: 4rem;
+    height: 4rem;
+    background: url("./Components/Chat/Pic_1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  #Task #Topic h3 {
+    margin-top: 0.5rem;
+  }
+  #Task #Topic #Info {
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Topic #Info div {
+    margin: 0 5rem;
+  }
+  #Task #CreateEvent {
+    height: 2.2rem;
+    width: 8rem;
+    background: #5cdb95;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 2rem 0;
+    cursor: pointer;
+  }
+  #Task #CreateEvent h6 {
+    font-size: 25px;
+    margin-top: 22px;
+    margin-left: 2rem;
+  }
+  .border {
+    width: 70vw;
+    height: 2px;
+    background-color: aqua;
+  }
+  #PopUp {
+    width: 35%;
+    height: 15rem;
+    background: #f2f2f2;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  #card {
+    margin-top: 10%;
+  }
+  #card input {
+    margin: 1rem 0rem;
+    width: 70%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #card #btn {
+    width: 5rem;
+    height: 2rem;
+    padding-top: 3.5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  .Submit {
+    background: #58b666;
+    margin: 12px 2% 12px 5%;
+  }
+  .Cancel {
+    margin: 12px 1% 12px 35%;
+    background: #a80000;
+  }
+  #Collapse_btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    outline-width: 2px;
+    outline-color: #00aabb;
+    padding: 18px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  #Collapse_btn .fas {
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  #SubCollapse {
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  .Info_Heading {
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+  .End {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  #Text_Area_Hidden {
+    display: none;
+    height: 0px;
+    transition: 1s ease-in-out;
+  }
+  #Text_Area_Show {
+    display: block;
+    height: auto;
+    transition: ease-in 0.4s;
+  }
+  /* CreateProject */
+  .CreateProject {
+    margin: 2rem 10% 1rem 15%;
+  }
+  .CreateProject h2 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .CreateProject .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .CreateProject .form label {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .CreateProject .form input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  .FormBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .NavBar {
+    width: 100%;
+    background: #5cdb95;
+    height: 5rem;
+    transition: height 1s;
+  }
+  .NavBar #LogoSec {
+    margin-left: 10vw;
+    padding-top: 0.3rem;
+  }
+  .NavBar #LogoSec p {
+    font-size: 22px;
+  }
+  .NavBar .List {
+    display: none;
+  }
+  .NavBar #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+
+  .NavBar-T {
+    width: 100%;
+    background: #5cdb95;
+    height: 100vh;
+    position: fixed;
+    transition: height 1s;
+  }
+  .NavBar-T #LogoSec {
+    margin-left: 10vw;
+    padding-top: 0.3rem;
+  }
+  .NavBar-T #LogoSec p {
+    font-size: 22px;
+  }
+  .NavBar-T .List li {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 5rem;
+    transition-delay: 0.8s;
+  }
+  .NavBar-T .List li p {
+    font-size: 20px;
+  }
+  .NavBar-T #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+  .SearchLayout {
+    width: 100%;
+    text-align: center;
+  }
+  .SearchInput {
+    margin: 0 auto;
+  }
+  .SearchInput input {
+    margin-top: 1rem;
+    width: 80vw;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .SearchInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  .SearchBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem 0rem;
+  }
+  .Table {
+    margin: 2rem auto;
+    height: auto;
+    width: 28rem;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  .Table .Head {
+    width: 100%;
+    height: 8rem;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Bottom {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Body div {
+    margin-left: 2rem;
+  }
+  .Table .Body #StEn {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Table .Body #Address {
+    font-size: 18px;
+  }
+  .Table .Body #ConNum {
+    font-size: 18px;
+  }
+  .Table .Body #DOJ {
+    font-size: 18px;
+  }
+  .Table .Body #TraDetail {
+    font-size: 18px;
+  }
+  .Table .Body #AddComm {
+    font-size: 18px;
+  }
+  #Header {
+    display: flex;
+    flex-direction: row;
+  }
+  #Header div {
+    display: block;
+  }
+  #Header_SUB {
+    margin-left: 1rem;
+  }
+  #Header_INFO {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  #Header_INFO h5 {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  #Header_IMG {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+  #Header_IMG img {
+    width: 80px;
+    border-radius: 1rem;
+  }
+  #Timer_Info {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 18px;
+  }
+  .CommentBtn {
+    width: 6.5rem;
+    height: 2.05rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  .CommentLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .CommentImg {
+    margin: 8px 25px 5px 15px;
+  }
+  .CommentImg img {
+    width: 50px;
+    border-radius: 25px;
+  }
+  .CommentTxt h6 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .CommentTxt p {
+    font-size: 13.5px;
+    margin-top: 10px;
+  }
+  #CommentInput input {
+    margin: 0rem 1rem 1rem 1.5rem;
+    width: 80%;
+    height: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #CommentInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  /* Chat containers */
+  .MessageContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ImageContent {
+    width: 95px;
+    margin: 4rem 1rem 0rem 1.5rem;
+  }
+  .ImageContent-other {
+    width: 95px;
+    margin: 4rem 1rem 0rem 0rem;
+  }
+  .speech-bubble-user {
+    position: relative;
+    background: #00aabb;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 95vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-user:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-right: -35px;
+  }
+  .speech-bubble-other {
+    position: relative;
+    background: #576dce;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 90vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-other:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right-color: #576dce;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-left: -35px;
+  }
+
+  /* Clear floats */
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #fff;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(58, 39, 39);
+  }
+  /* input */
+  #MessageSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #MessageSection input {
+    margin: 1rem 0 0.5rem 1.5rem;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #MessageSection p {
+    width: 4.5rem;
+    height: 2.9rem;
+    border-radius: 0px 10px 8px 0px;
+    margin: 1rem -4.6rem;
+    color: black;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #MessageSection input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  #MessageSection input:focus + #Send {
+    background-color: dodgerblue;
+    border-radius: 0px 10px 8px 0px;
+    outline: none;
+    /* box-shadow: 0 0 8px 0 dodgerblue */
+  }
+  #Task {
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Text h6 {
+    font-size: 25px;
+  }
+  #Task #Pic {
+    width: 4rem;
+    height: 4rem;
+    background: url("./Components/Chat/Pic_1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  #Task #Topic h3 {
+    margin-top: 0.5rem;
+  }
+  #Task #Topic #Info {
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Topic #Info div {
+    margin: 0 5rem;
+  }
+  #Task #CreateEvent {
+    height: 2.2rem;
+    width: 8rem;
+    background: #5cdb95;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 2rem 0;
+    cursor: pointer;
+  }
+  #Task #CreateEvent h6 {
+    font-size: 25px;
+    margin-top: 22px;
+    margin-left: 2rem;
+  }
+  .border {
+    width: 70vw;
+    height: 2px;
+    background-color: aqua;
+  }
+  #PopUp {
+    width: 35%;
+    height: 15rem;
+    background: #f2f2f2;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  #card {
+    margin-top: 10%;
+  }
+  #card input {
+    margin: 1rem 0rem;
+    width: 70%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #card #btn {
+    width: 5rem;
+    height: 2rem;
+    padding-top: 3.5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  .Submit {
+    background: #58b666;
+    margin: 12px 2% 12px 5%;
+  }
+  .Cancel {
+    margin: 12px 1% 12px 35%;
+    background: #a80000;
+  }
+  #Collapse_btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    outline-width: 2px;
+    outline-color: #00aabb;
+    padding: 18px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  #Collapse_btn .fas {
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  #SubCollapse {
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  .Info_Heading {
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+  .End {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  #Text_Area_Hidden {
+    display: none;
+    height: 0px;
+    transition: 1s ease-in-out;
+  }
+  #Text_Area_Show {
+    display: block;
+    height: auto;
+    transition: ease-in 0.4s;
+  }
+  /* CreateProject */
+  .CreateProject {
+    margin: 2rem 10% 1rem 10%;
+  }
+  .CreateProject h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .CreateProject .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .CreateProject .form label {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .CreateProject .form input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  .FormBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .NavBar {
+    width: 100%;
+    background: #5cdb95;
+    height: 5rem;
+    transition: height 1s;
+  }
+  .NavBar #LogoSec {
+    margin-left: 5vw;
+    padding-top: 0.3rem;
+  }
+  .NavBar #LogoSec p {
+    font-size: 20px;
+  }
+  .NavBar .List {
+    display: none;
+  }
+  .NavBar #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+
+  .NavBar-T {
+    width: 100%;
+    background: #5cdb95;
+    height: 100vh;
+    position: fixed;
+    transition: height 1s;
+  }
+  .NavBar-T #LogoSec {
+    margin-left: 5vw;
+    padding-top: -0.3rem;
+  }
+  .NavBar-T #LogoSec p {
+    font-size: 20px;
+  }
+  .NavBar-T .List li {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 5rem;
+    transition-delay: 0.8s;
+  }
+  .NavBar-T .List li p {
+    font-size: 20px;
+  }
+  .NavBar-T #Toggle {
+    display: block;
+    float: right;
+    margin-top: -3rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+  }
+  .SearchLayout {
+    width: 100%;
+    text-align: center;
+  }
+  .SearchInput {
+    margin: 0 auto;
+  }
+  .SearchInput input {
+    margin-top: 0.6rem;
+    width: 75vw;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .SearchInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  .SearchBtn {
+    width: 8rem;
+    height: 2.2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.5rem 0rem;
+  }
+  .Table {
+    margin: 2rem auto;
+    height: auto;
+    width: 90vw;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  .Table .Head {
+    width: 100%;
+    height: 10rem;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Bottom {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #bfbfbf;
+    background-color: #f7f7f7;
+  }
+  .Table .Body div {
+    margin-left: 2rem;
+  }
+  .Table .Body #StEn {
+    font-size: 23px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Table .Body #Address {
+    font-size: 17px;
+  }
+  .Table .Body #ConNum {
+    font-size: 17px;
+  }
+  .Table .Body #DOJ {
+    font-size: 17px;
+  }
+  .Table .Body #TraDetail {
+    font-size: 17px;
+  }
+  .Table .Body #AddComm {
+    font-size: 17px;
+  }
+  #Header {
+    display: block;
+    text-align: center;
+  }
+  #Header div {
+    display: block;
+  }
+  #Header_SUB {
+    margin-left: 1rem;
+  }
+  #Header_INFO {
+    margin-top: 0.5rem;
+  }
+  #Header_INFO h5 {
+    font-size: 18px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-weight: 500;
+  }
+  #Header_IMG {
+    margin-top: 0.5rem;
+  }
+  #Header_IMG img {
+    width: 60px;
+    border-radius: 1rem;
+  }
+  #Timer_Info {
+    margin-top: 0rem;
+    font-size: 16px;
+  }
+  .CommentBtn {
+    width: 6rem;
+    height: 2rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem 0rem 1rem 2rem;
+  }
+  .CommentLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .CommentImg {
+    margin: 7px 16px 5px 10px;
+  }
+  .CommentImg img {
+    width: 46px;
+    border-radius: 23px;
+  }
+  .CommentTxt h6 {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .CommentTxt p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  #CommentInput input {
+    margin: 0rem 1rem 1rem 1.5rem;
+    width: 78%;
+    height: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #CommentInput input:focus {
+    border: 2px solid #5cdb95;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 #5cdb95;
+  }
+  /* Chat containers */
+  .MessageContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ImageContent {
+    width: 95px;
+    margin: 4rem 1rem 0rem 1.5rem;
+  }
+  .ImageContent-other {
+    width: 95px;
+    margin: 4rem 1rem 0rem 0rem;
+  }
+  .speech-bubble-user {
+    position: relative;
+    background: #00aabb;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 95vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-user:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-right: -35px;
+  }
+  .speech-bubble-other {
+    position: relative;
+    background: #576dce;
+    border-radius: 0.4em;
+    padding: 0.5rem;
+    width: 90vw;
+    margin: 1rem 0rem 1rem 1.5rem;
+    height: auto;
+  }
+
+  .speech-bubble-other:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right-color: #576dce;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -17.5px;
+    margin-left: -35px;
+  }
+
+  /* Clear floats */
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #fff;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(58, 39, 39);
+  }
+  /* input */
+  #MessageSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #MessageSection input {
+    margin: 1rem 0 0.5rem 1.5rem;
+    width: 90%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #MessageSection p {
+    width: 4.5rem;
+    height: 2.9rem;
+    border-radius: 0px 10px 8px 0px;
+    margin: 1rem -4.6rem;
+    color: black;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #MessageSection input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  #MessageSection input:focus + #Send {
+    background-color: dodgerblue;
+    border-radius: 0px 10px 8px 0px;
+    outline: none;
+    /* box-shadow: 0 0 8px 0 dodgerblue */
+  }
+  #Task {
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Text h6 {
+    font-size: 25px;
+  }
+  #Task #Pic {
+    width: 4rem;
+    height: 4rem;
+    background: url("./Components/Chat/Pic_1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  #Task #Topic h3 {
+    margin-top: 0.5rem;
+  }
+  #Task #Topic #Info {
+    display: flex;
+    flex-direction: row;
+  }
+  #Task #Topic #Info div {
+    margin: 0 5rem;
+  }
+  #Task #CreateEvent {
+    height: 2.2rem;
+    width: 8rem;
+    background: #5cdb95;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 2rem 0;
+    cursor: pointer;
+  }
+  #Task #CreateEvent h6 {
+    font-size: 25px;
+    margin-top: 22px;
+    margin-left: 2rem;
+  }
+  .border {
+    width: 70vw;
+    height: 2px;
+    background-color: aqua;
+  }
+  #PopUp {
+    width: 35%;
+    height: 15rem;
+    background: #f2f2f2;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  #card {
+    margin-top: 10%;
+  }
+  #card input {
+    margin: 1rem 0rem;
+    width: 70%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  #card #btn {
+    width: 5rem;
+    height: 2rem;
+    padding-top: 3.5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  .Submit {
+    background: #58b666;
+    margin: 12px 2% 12px 5%;
+  }
+  .Cancel {
+    margin: 12px 1% 12px 35%;
+    background: #a80000;
+  }
+  #Collapse_btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    outline-width: 2px;
+    outline-color: #00aabb;
+    padding: 18px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  #Collapse_btn .fas {
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  #SubCollapse {
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  .Info_Heading {
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+  .End {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  #Text_Area_Hidden {
+    display: none;
+    height: 0px;
+    transition: 1s ease-in-out;
+  }
+  #Text_Area_Show {
+    display: block;
+    height: auto;
+    transition: ease-in 0.4s;
+  }
+  #Text_Area_Show p {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  /* CreateProject */
+  .CreateProject {
+    margin: 1rem 10% 1rem 7%;
+  }
+  .CreateProject h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .CreateProject .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .CreateProject .form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .CreateProject .form input {
+    margin-bottom: 20px;
+    width: 88%;
+    height: 2.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+  }
+  .CreateProject .form input:focus {
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 25px;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+  .FormBtn {
+    width: 7rem;
+    height: 2.1rem;
+    background: #5cdb95;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+}
+
+#Footer {
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(92, 219, 149);
+  text-align: center;
+}
+#Footer #Text {
+  font-size: 22px;
+  color: #000;
+  padding-top: 0.5rem;
+}
